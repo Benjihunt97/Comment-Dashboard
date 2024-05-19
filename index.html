@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title></title>
+</head>
+
+<bod class="grid place-items-center min-h-screen bg-gray-200" >
+  
+  <main class="w-[90%] max-w-[700px] bg-white rounded-lg shadow-2xl p-5 sm:px-12 sm:py-32 overflow-hidden">
+    
+    <section id="slider" >
+      <div class="grid">
+        <div class="realtive text-sm text-right border border-gray-300 p-10 mb-3
+        relative
+        before:absolute
+        before:right-7
+        before:size-3
+        before:bg-white
+        before:rotate-45
+        before:-bottom-[6.7px]
+        before:border-r
+        before:border-b
+        before:border-r-gray-300
+        before:border-b-gray-300
+        ">
+          <div class="absolute -top-[44px] -left-[15.5px] border-r border-gray-300 size-32 w-fit rotate-45 bg-white grid place-items-center">
+            <svg class="-rotate-45" width="70" height="70" viewBox="0 0 24 24" stroke-width="2" stroke="#38bdf8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M10 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5" />
+              <path d="M19 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5" />
+            </svg>
+          </div>
+          <p id="user-text" class="sm:w-[60ch] ml-auto translate-x-[300%] transition-all duration-500">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat lacus orci, non suscipit nibh porttitor eu. Etiam sodales arcu at turpis tristique blandit. Aliquam erat volutpat. Fusce a eros nenu.
+          </p>
+        </div>
+        <div class="flex items-center gap-3 ml-auto text-right">
+          <div id="user-info" class="translate-x-[300%] transition-all duration-500">
+            <h1 id="username" class="font-bold text-sky-300 border-b-4 border-b-sky-300 w-fit">JONATHAN SMITH</h1>
+            <p id="user-title" class="text-sm text-gray-300">designer</p>
+          </div>
+          <img id="user-img" class="size-16 rounded-full shadow-lg object-cover transition-all duration-all translate-x-[300%]" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFufGVufDB8fDB8fHww" alt="">
+        </div>
+      </div>
+    </section>
+    
+    
+    <div class="flex gap-2 w-fit mx-auto mt-5
+      [&>*]:size-4
+      [&>*]:p-1
+      [&>*]:border
+      [&>*]:border-gray-400
+      [&>*]:rounded-full
+      [&>*]:block
+    ">
+      <span class="
+      relative
+      before:absolute
+      before:left-1/2
+      before:-translate-x-1/2
+      before:top-1/2
+      before:-translate-y-1/2
+      before:bg-sky-300
+      before:size-2
+      before:rounded-full
+      
+      ">
+        <input class="absolute inset-0 opacity-0" type="radio" name="data-position">
+      </span>
+      <span class="dots
+        relative
+        before:absolute
+        before:left-1/2
+        before:-translate-x-1/2
+        before:top-1/2
+        before:-translate-y-1/2
+        before:bg-sky-300
+        before:size-2
+        before:rounded-full
+        before:hidden
+      ">
+        <input class="absolute inset-0 opacity-0" type="radio" name="data-position">
+      </span>
+      <span class="dots
+        relative
+        before:absolute
+        before:left-1/2
+        before:-translate-x-1/2
+        before:top-1/2
+        before:-translate-y-1/2
+        before:bg-sky-300
+        before:size-2
+        before:rounded-full
+        before:hidden
+      ">
+        <input class="absolute inset-0 opacity-0" type="radio" name="data-position">
+      </span>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
